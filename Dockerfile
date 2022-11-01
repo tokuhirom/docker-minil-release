@@ -16,5 +16,5 @@ RUN cpanm --notest --no-man-pages --with-recommends --with-suggests --with-all-f
 
 WORKDIR /target/
 
-CMD [ "/bin/bash", "-c", "cpanm --notest --no-man-pages --with-recommends --with-suggests --with-all-features . && minil release" ]
+CMD [ "/bin/bash", "-c", "cpanm --notest --no-man-pages --with-recommends --with-suggests --with-all-features --installdeps . && minil release" ]
 
