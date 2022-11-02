@@ -1,3 +1,5 @@
 #!/bin/bash
-docker run -it --rm -v $PWD:/target/ -v $HOME/.pause:/root/.pause -v $HOME/.ssh:/root/.ssh --name minil-release-app docker-minil-release "$@"
+docker pull ghcr.io/tokuhirom/docker-minil-release:latest
+docker run -it --rm -v $PWD:/target/ -v $HOME/.pause:/root/.pause -v $HOME/.ssh:/root/.ssh --name minil-release-app ghcr.io/tokuhirom/docker-minil-release:latest
+
 
