@@ -19,8 +19,8 @@ RUN cpanm --notest --no-man-pages --with-recommends --with-suggests --with-all-f
 RUN cpanm --notest --no-man-pages --with-recommends --with-suggests --with-all-features Test::Perl::Critic Perl::Critic
 RUN cpanm --notest --no-man-pages --with-recommends --with-suggests --with-all-features HTTP::Server::Simple::CGI Spiffy WWW::MobileCarrierJP
 
-RUN git config --global user.email "you@example.com"
-RUN git config --global user.name "Your Name"
+RUN git config --global user.email "tokuhirom@gmail.com"
+RUN git config --global user.name "Tokuhiro Matsuno"
 
 WORKDIR /target/
 
